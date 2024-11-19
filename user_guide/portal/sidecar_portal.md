@@ -54,9 +54,9 @@ Sidecar 플랫폼 포털에 접속한다.<br><br>
 <br>
 
 ## <div id='2-1'/>2.1. 컨테이너 플랫폼 포털 관리자 계정 로그인
-Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
-컨테이너 관리자 계정은 Sidecar의 리소스를 확인할 수 있으며, 생성한 계정의 접근권한에 대한 설정이 가능하다.
-컨테이너 관리자 계정은 패스워드 초기화 설정이 필요하므로 다음 링크 내용을 참조하여 선처리한다.
+Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.  
+컨테이너 관리자 계정은 Sidecar의 리소스를 확인할 수 있으며, 생성한 계정의 접근권한에 대한 설정이 가능하다.  
+컨테이너 관리자 계정은 패스워드 초기화 설정이 필요하므로 다음 링크 내용을 참조하여 선처리한다.  
 
 [컨테이너 플랫폼 포털 관리자 계정 패스워드 설정](https://github.com/K-PaaS/container-platform/blob/master/use-guide/portal/container-platform-portal-guide.md#-key-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%8F%AC%ED%84%B8-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B3%84%EC%A0%95-%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C-%EC%84%A4%EC%A0%95-)
 
@@ -78,7 +78,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 
 ![image 004]
 
-- 회원가입 후 바로 포털 접속이 불가하며 관리자로부터 해당 사용자가 이용할 Sidecar Role을 할당 받은 후 포털 이용이 가능하다.
+- 회원가입 후 바로 포털 접속이 불가하며 관리자로부터 해당 사용자가 이용할 Sidecar Role을 할당 받은 후 포털 이용이 가능하다.  
   사용자에게 Sidecar Role 할당 및 Org & Space 할당은 [[4.4. Managementes 메뉴]](#4-4) 를 참고한다.
 
 ![image 005]
