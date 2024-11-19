@@ -1,4 +1,4 @@
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar - local
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar - local
 
 ## Table of Contents
 
@@ -333,4 +333,4 @@ $ ./delete-kind.sh
 
 <br>
 
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar - local
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar - local

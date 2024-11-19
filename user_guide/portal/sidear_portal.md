@@ -27,6 +27,10 @@
    * [4.5.1. Access](#4-5-1)
 
 
+
+
+
+
 <br>
 
 
@@ -74,7 +78,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 
 ![image 004]
 
-- 회원가입 후 바로 포털 접속이 불가하며 관리자로부터 해당 사용자가 이용할 Namespace와 Role을 할당 받은 후 포털 이용이 가능하다.
+- 회원가입 후 바로 포털 접속이 불가하며 관리자로부터 해당 사용자가 이용할 Sidecar Role을 할당 받은 후 포털 이용이 가능하다.
   사용자에게 Sidecar Role 할당 및 Org & Space 할당은 [[4.4. Managementes 메뉴]](#4-4) 를 참고한다.
 
 ![image 005]
@@ -189,7 +193,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 - App 목록에서 추가 버튼을 클릭할 시 App 추가 팝업창이 뜬다.
 - App 추가 팝업창에서 이름, Route, Memory, Disk, File을 지정할 수 있다.
 
-  ![4-2-1-2]
+![4-2-1-2]
 
 <br>
 
@@ -197,7 +201,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 - App 목록에서 App명을 클릭하여 App 상세 페이지로 이동한다.  
 - App 상세 페이지는 App 정보, App Instances, App Service, App Environment, App Route, App Log 확인이 가능하다.  
 
-  ![4-2-1-3]
+![4-2-1-3]
 <br>
 
 ##### <div id='4-2-1-3-1'/> 4.2.1.3.1. App 정보
@@ -205,101 +209,112 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 <br>
 
 ###### <div id='4-2-1-3-1-1'/> 4.2.1.3.1.1. App 이름 변경
-- Name칸을 수정하여 저장 버튼을 클릭 할 시 App 이름 변경이 가능하다.
+- Name항목을 수정하여 저장 버튼을 클릭 할 시 App 이름 변경이 가능하다.
 <br>
 
  ###### <div id='4-2-1-3-1-2'/> 4.2.1.3.1.2. App Instances 변경
-- Instance칸을 수정하여 저장 버튼을 클릭 할 시 App Instances 변경이 가능하다.
+- Instance항목을 수정하여 저장 버튼을 클릭 할 시 App Instances 변경이 가능하다.
 <br>
 
 ###### <div id='4-2-1-3-1-4'/> 4.2.1.3.1.4. App Memory 변경
-- Memory칸을 수정하여 저장 버튼을 클릭 할 시 App Memory 변경이 가능하다.
+- Memory항목을 수정하여 저장 버튼을 클릭 할 시 App Memory 변경이 가능하다.
 <br>
 
 ###### <div id='4-2-1-3-1-5'/> 4.2.1.3.1.5. App Disk 변경
-- Disk칸을 수정하여 저장 버튼을 클릭 할 시 App Disk 변경이 가능하다.
+- Disk항목을 수정하여 저장 버튼을 클릭 할 시 App Disk 변경이 가능하다.
 <br>
 
 ###### <div id='4-2-1-3-1-6'/> 4.2.1.3.1.6. App 시작/중지
-- State칸의 버튼을 클릭 할 시 App 시작/중지가 가능하다.
+- State항목의 버튼을 클릭 할 시 App 시작/중지가 가능하다.
 <br>
 
 ##### <div id='4-2-1-3-2'/> 4.2.1.3.2. App Instances
 - App의 Instance 별 리소스 사용량과 상태 확인이 가능하다.
 <br>
 
-##### <div id='4-2-1-3-3'/> 4.2.1.3.3. App Service
-- App에 연결되어 있는 Service 목록 확인이 가능하다.
+##### <div id='4-2-1-3-3'/> 4.2.1.3.3. App Services
+- Service App Bind 목록 확인이 가능하다.
 
 ![4-2-1-3-3]
 <br>
 
 ###### <div id='4-2-1-3-3-1'/> 4.2.1.2.3.1. App-Service 연결
-- App에 연결되어있는 Service 목록에서 연결 버튼을 클릭할 시 Service 연결 팝업창이 뜬다.  
+- Service App Bind 목록에서 연결 버튼을 클릭할 시 Service 연결 팝업창이 뜬다.  
 
 ![4-2-1-3-3-1]  
 <br>
 
 ###### <div id='4-2-1-3-3-2'/> 4.2.1.3.3.2. Service Credentials 조회
-- App에 연결되어있는 Service 목록에서 Credentials 버튼을 클릭할 시 Service Credentials 조회 팝업창이 뜬다.  
-  ![4-2-1-3-3-2]
+- Service App Bind 목록에서 Credentials 버튼을 클릭할 시 Service Credentials 조회 팝업창이 뜬다.  
+
+![4-2-1-3-3-2]
 <br>
 
 ###### <div id='4-2-1-3-3-3'/> 4.2.1.3.3.3. App-Service 연결 해제
-- App에 연결되어있는 Service 목록에서 Disconnect 버튼을 클릭할 시 App과 Service 연결이 해제된다.  
-  ![4-2-1-3-3-3]
+- Service App Bind 목록에서 Disconnect 버튼을 클릭할 시 App과 Service 연결이 해제된다.  
+
+![4-2-1-3-3-3]
 <br>
 
 ##### <div id='4-2-1-3-4'/> 4.2.1.3.4. App Environment
 - App의 Environment Variable와 System Environment 조회가 가능하다.
-  ![4-2-1-3-4]
+
+![4-2-1-3-4]
 <br>
 
 ###### <div id='4-2-1-3-4-1'/> 4.2.1.3.4.1. App Environment 추가
 - App의 Environment Variable 목록에서 추가 버튼을 클릭할 시 환경변수 추가 팝업창이 뜬다.  
 - App의 Environment Variable 추가 팝업창에서 Key, Value을 지정할 수 있다.
-  ![4-2-1-3-4-1]
+
+![4-2-1-3-4-1]
 
 <br>
 
 ###### <div id='4-2-1-3-4-2'/> 4.2.1.3.4.2. App Environment 수정
 - Value칸을 수정하여 저장 버튼을 클릭 할 시 App Environment 수정이 가능하다. 
-  ![4-2-1-3-4-2]
+
+![4-2-1-3-4-2]
 
 <br>
 
 ###### <div id='4-2-1-3-4-3'/> 4.2.1.3.4.3. App Environment 삭제
-- App의 Environment Variable 목록에서 삭제(🗑️) 버튼을 클릭할 시 환경변수 삭제가 가능하다.  
-  ![4-2-1-3-4-3]
+- App의 Environment Variable 목록에서 삭제 버튼을 클릭할 시 환경변수 삭제가 가능하다.  
+
+![4-2-1-3-4-3]
 
 <br>
 
-##### <div id='4-2-1-3-5'/> 4.2.1.3.5. App Route
-- App에 연결되어 있는 Route 목록 확인이 가능하다.
-  ![4-2-1-3-5]
+##### <div id='4-2-1-3-5'/> 4.2.1.3.5. App Routes
+- Route App Bind 목록 확인이 가능하다.
+
+![4-2-1-3-5]
 <br>
 
 ###### <div id='4-2-1-3-5-1'/> 4.2.1.3.5.1. App-Routes 연결
-- App에 연결되어있는 Route 목록에서 연결 버튼을 클릭할 시 Route 연결 팝업창이 뜬다.  
-  ![4-2-1-3-5-1]
+- Route App Bind 목록에서 연결 버튼을 클릭할 시 Route 연결 팝업창이 뜬다.  
+
+![4-2-1-3-5-1]
 
 <br>
 
 ###### <div id='4-2-1-3-5-2'/> 4.2.1.3.5.2. App-Routes 연결 해제
-- App에 연결되어있는 Route 목록에서 Disconnect 버튼을 클릭할 시 App과 Route 연결이 해제된다.  
-  ![4-2-1-3-5-2]
+- Route App Bind 목록에서 Disconnect 버튼을 클릭할 시 App과 Route 연결이 해제된다.  
+
+![4-2-1-3-5-2]
 
 <br>
 
 ##### <div id='4-2-1-3-6'/> 4.2.1.3.6. App Log 조회
 - App의 Log 확인이 가능하다.  
-  ![4-2-1-3-6]
+
+![4-2-1-3-6]
 
 <br>
 
 ##### <div id='4-2-1-3-7'/> 4.2.1.3.7. App 삭제
 - 우측 하단의 삭제 버튼을 클릭할 시 App 삭제가 가능하다.
-  ![4-2-1-3-7]
+
+![4-2-1-3-7]
 
 <br>
 
@@ -307,51 +322,58 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 ### <div id='4-3-1'/> 4.3.1. Domains
 #### <div id='4-3-1-1'/> 4.3.1.1. Domain 목록
 - Resources의 Domains를 클릭하여 Domain 목록 페이지로 이동한다.  
-  ![4-3-1-1]
+
+![4-3-1-1]
 
 <br>
 
 #### <div id='4-3-1-2'/> 4.3.1.2. Domain 추가
 - Domain 목록에서 추가 버튼을 클릭할 시 Domain 추가 팝업창이 뜬다.  
-  ![4-3-1-2]
+
+![4-3-1-2]
 
 <br>
 
 #### <div id='4-3-1-3'/> 4.3.1.3. Domain 삭제
-- Domain 목록에서 삭제(🗑️) 버튼을 클릭할 시 Domain이 삭제된다.  
-  ![4-3-1-3]
+- Domain 목록에서 삭제 버튼을 클릭할 시 Domain이 삭제된다.  
+
+![4-3-1-3]
 
 <br>
 
 ### <div id='4-3-2'/> 4.3.2. Routes
 #### <div id='4-3-2-1'/> 4.3.2.1. Route 목록
 - Resources의 Routes를 클릭하여 Route 목록 페이지로 이동한다.  
-  ![4-3-2-1]
+
+![4-3-2-1]
 
 <br>
 
 #### <div id='4-3-2-2'/> 4.3.2.2. Route 추가
 - Route 목록에서 추가 버튼을 클릭할 시 Route 추가 팝업창이 뜬다.  
 - Route 추가 팝업창에서 Host, Domain, Path(선택)를 지정할 수 있다.
-  ![4-3-2-2]
+
+![4-3-2-2]
 
 <br>
 
 #### <div id='4-3-2-3'/> 4.3.2.3. Route 삭제
-- Route 목록에서 삭제(🗑️) 버튼을 클릭할 시 Route가 삭제된다.  
-  ![4-3-2-3]
+- Route 목록에서 삭제 버튼을 클릭할 시 Route가 삭제된다.  
+
+![4-3-2-3]
 
 <br>
 
 #### <div id='4-3-2-4'/> 4.3.2.4. Route 상세
 - Route 목록에서 Route명을 클릭하여 Route 상세 페이지로 이동한다.  
 - Route 상세 페이지는 Route 정보, Route App Bind 목록 확인이 가능하다.
-  ![4-3-2-4]
+
+![4-3-2-4]
 
 <br>
 
 ##### <div id='4-3-2-4-1'/> 4.3.2.4.1. App-Route 연결 해제
-- Route App Bind 목록에서 삭제(🗑️) 버튼을 클릭할 시 App과 Route가 연결해제 된다.  
+- Route App Bind 목록에서 삭제 버튼을 클릭할 시 App과 Route의 연결이 해제 된다.  
 
 <br>
 
@@ -363,27 +385,31 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 ### <div id='4-3-3'/> 4.3.3. Services
 #### <div id='4-3-3-1'/> 4.3.3.1. Service 목록
 - Resources의 Services를 클릭하여 Service 목록 페이지로 이동한다.  
-  ![4-3-3-1]
+
+![4-3-3-1]
 
 <br>
 
 #### <div id='4-3-3-2'/> 4.3.3.2. Service 추가
 - Service 목록에서 추가 버튼을 클릭할 시 Service 추가 팝업창이 뜬다.  
 - Service 추가 팝업창에서 이름, Credentials(JSON)를 지정할 수 있다.
-  ![4-3-3-2]
+
+![4-3-3-2]
 
 <br>
 
 #### <div id='4-3-3-3'/> 4.3.3.3. Service 삭제
-- Service 목록에서 삭제(🗑️) 버튼을 클릭할 시 Service가 삭제된다.  
-  ![4-3-3-3]
+- Service 목록에서 삭제 버튼을 클릭할 시 Service가 삭제된다.  
+
+![4-3-3-3]
 
 <br>
 
 #### <div id='4-3-3-4'/> 4.3.3.4. Service 상세
-- Service 목록에서 Route명을 클릭하여 Service 상세 페이지로 이동한다.  
+- Service 목록에서 Service명을 클릭하여 Service 상세 페이지로 이동한다.  
 - Service 상세 페이지는 Service 정보, Service App Bind 목록 확인이 가능하다.
-  ![4-3-3-4]
+
+![4-3-3-4]
 
 <br>
 
@@ -393,7 +419,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 <br>
 
 ##### <div id='4-3-3-2-2'/> 4.3.1.1.2. App-Service 연결 해제
-- Service App Bind 목록에서 삭제(🗑️) 버튼을 클릭할 시 App과 Service가 연결해제 된다.  
+- Service App Bind 목록에서 삭제 버튼을 클릭할 시 App과 Service의 연결이 해제 된다.  
 
 <br>
 
@@ -404,59 +430,64 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 
 ## <div id='4-4'/> 4.4. Managements 메뉴
 ### <div id='4-4-1'/> 4.4.1. Sidecar Users
-#### <div id='4-4-1-1'/> 4.4.1.1. Sidecar 관리자 목록
-- Managements 메뉴의 Users를 선택하고 Administrator탭을 클릭하여 Sidecar 관리자를 조회한다.  
-- Sidecar 관리자 권한은 한 명 이상 가능하다.  
-  ![4-4-1-1]
+#### <div id='4-4-1-1'/> 4.4.1.1. 클러스터 관리자 목록
+- Managements 메뉴의 Users를 선택하고 Administrator탭을 클릭하여 클러스터 관리자를 조회한다.  
+
+![4-4-1-1]
 
 <br>
 
-#### <div id='4-4-1-2'/> 4.4.1.2. Sidecar 관리자 상세
-- Sidecar 관리자 User ID를 클릭하여 Sidecar 관리자 상세 조회 페이지로 이동한다.  
-  ![4-4-1-2]
+#### <div id='4-4-1-2'/> 4.4.1.2. 클러스터 관리자 상세
+- 클러스터 관리자 User ID를 클릭하여 클러스터 관리자 상세 조회 페이지로 이동한다.  
+
+![4-4-1-2]
 
 <br>
 
 ##### <div id='4-4-1-2-1'/> 4.4.1.2.1. Sidecar Role 수정
 - User 상세에서 수정 버튼을 클릭하여 User 수정 페이지로 이동한다.  
 - User 수정 페이지에서 해당 사용자에게 Sidecar 관리자(Sidecar Admin) 또는 Sidecar 사용자(Sidecar User) 권한 할당이 가능하다.  
-  ![4-4-1-2-1]
+
+![4-4-1-2-1]
 
 <br>
 
 #### <div id='4-4-1-3'/> 4.4.1.3. Sidecar 일반 사용자 목록
 - Managements 메뉴의 Users를 선택하고 User탭을 클릭하여 사용자 목록을 조회한다.  
   - 활성(Active) 탭 : Sidecar 내 사용 권한이 활성화된 사용자 목록  
-  - 비활성(Inactive) 탭 : Sidecar 내 사용 권한이 비활성화된 사용자 목록  
-
   ![4-4-1-3_1]
+  - 비활성(Inactive) 탭 : Sidecar 내 사용 권한이 비활성화된 사용자 목록  
   ![4-4-1-3_2]
 
 <br>
 
 #### <div id='4-4-1-4'/> 4.4.1.4. Sidecar 일반 사용자 상세
-- Sidecar 관리자 User ID를 클릭하여 일반 사용자 상세 조회 페이지로 이동한다.  
-  ![4-4-1-4]
+- User ID를 클릭하여 일반 사용자 상세 조회 페이지로 이동한다.  
+
+![4-4-1-4]
 
 <br>
 
 ##### <div id='4-4-1-4-1'/> 4.4.1.4.1. Sidecar Role 수정
 - User 상세에서 수정 버튼을 클릭하여 User 수정 페이지로 이동한다.  
 - User 수정 페이지에서 해당 사용자에게 Sidecar 관리자(Sidecar Admin) 또는 Sidecar 사용자(Sidecar User) 권한 할당이 가능하다.  
-  ![4-4-1-4-1]
+
+![4-4-1-4-1]
 
 <br>
 
 ### <div id='4-4-2'/> 4.4.2. Organizations
 #### <div id='4-4-2-1'/> 4.4.2.1. Organization 목록
 - Managements의 Organizations을 클릭하여 Organization 목록 페이지로 이동한다.  
-  ![4-4-2-1]
+
+![4-4-2-1]
 
 <br>
 
 #### <div id='4-4-2-2'/> 4.4.2.2. Organization 추가
 - Organization 목록에서 추가 버튼을 클릭할 시 Organization 추가 팝업창이 뜬다.  
-  ![4-4-2-2]
+
+![4-4-2-2]
 
 <br>
 
@@ -464,7 +495,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 - Organization 목록에서 Organization명을 클릭하여 Organization 상세 페이지로 이동한다.  
 - Organization 상세 페이지는 Org 정보, Organization User 목록, Space 목록 확인이 가능하다.
 
-  ![4-4-2-3]
+![4-4-2-3]
 
 <br>
 
@@ -477,8 +508,9 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 <br>
 
 ##### <div id='4-4-2-3-2'/> 4.4.2.3.2. Organization User 권한 설정
-- Organization User 목록에서 Org Role을 클릭하여 Organization User 권한 설정이 가능하다.
-  ![4-4-2-3-2]
+- Organization User 목록에서 Org Role을 클릭하여 Organization User 권한 설정이 가능하다.  
+
+![4-4-2-3-2]
 
 <br>
 
@@ -492,7 +524,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 ##### <div id='4-4-2-3-4'/> 4.4.2.3.4. Space 상세
 - Space 목록에서 Space명을 클릭하여 Space 상세 페이지로 이동한다.  
 
-  ![4-4-2-3-4]
+![4-4-2-3-4]
 
 <br>
 
@@ -500,7 +532,8 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 - Space User 목록에서 추가 버튼을 클릭할 시 Space User 추가 팝업창이 뜬다.
 - Organization에 소속된 User만 Space User로 초대가 가능하다
 - Space User는 Space Developer와 Space Manager 선택이 가능하다.
-  ![4-4-2-3-4-1]
+
+![4-4-2-3-4-1]
 
 <br>
 
@@ -508,7 +541,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 ###### <div id='4-4-2-3-4-2'/> 4.4.2.3.4.2. Space User 권한 설정
 - Space User 목록에서 Space Role을 클릭하여 Space User 권한 설정이 가능하다.
 
-  ![4-4-2-3-4-2]
+![4-4-2-3-4-2]
 
 <br>
 
@@ -518,7 +551,8 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 #### <div id='4-5-1-1'/> 4.5.1.1. Access 상세
 - User Info 정보를 조회한다.  
 - Sidecar 플랫폼의 CLI 사용을 위한 환경 및 사용 설정 정보를 조회한다.  
-  ![4-5-1-1]
+
+![4-5-1-1]
 
 
 

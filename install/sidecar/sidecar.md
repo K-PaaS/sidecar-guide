@@ -1,4 +1,4 @@
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar
 
 ## Table of Contents
 
@@ -520,4 +520,4 @@ $ source deploy-inject-self-signed-cert.sh
 - [네임스페이스 생성 & 레지스트리 정보 입력](#2.5) 부터 가이드를 확인하여 설치를 진행한다.
 
 
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar

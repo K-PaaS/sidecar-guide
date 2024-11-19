@@ -1,4 +1,4 @@
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar Portal
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar Portal
 
 ## Table of Contents
 
@@ -80,10 +80,8 @@ $ ./deploy-cp-portal-infra.sh
 Sidecar 환경에 Portal을 배포한다 (환경에 맞춰 CUSTOM VARIABLES 변경)
 ```
 $ cd $HOME/sidecar-deployment/install-scripts/portal
-$ vi deploy-portal.sh
+$ vi portal-deploy-variables.yml
 
-
-#!/bin/bash
 
 # CUSTOM VARIABLES
 HELM_CP_PORTAL_NAMESPACE=cp-portal
@@ -91,12 +89,13 @@ HELM_CP_PORTAL_RESOURCE_NAME=cp-portal
 HELM_SIDECAR_NAMESPACE=sidecar
 HELM_SIDECAR_NAME=sidecar
 TARGET_CLUSTER=host-cluster #check cp-portal-deployment/script/cp-portal-vars.sh HOST_CLUSTER_NAME
+K8S_CLUSTER_ADMIN_NAMESPACE=kube-system #check cp-portal-deployment/script/cp-portal-vars.sh K8S_CLUSTER_ADMIN_NAMESPACE
+K8S_CLUSTER_ADMIN=cp-cluster-admin #check cp-portal-deployment/script/cp-portal-vars.sh K8S_CLUSTER_ADMIN
 ORG_NAME=system
 SPACE_NAME=portal
 SIDECAR_ADMIN_KUBECONFIG=$(pwd)/../support-files/user/sidecar-sidecar-admin.ua.kubeconfig
-
-......................
-......................
+PORTAL_API_NAME=sidecar-portal-api
+PORTAL_UI_NAME=sidecar-portal-ui
 
 
 
@@ -111,10 +110,8 @@ $ ./deploy-portal.sh
 
 ### <div id='2.4.1'> ※ (참고) Sidecar Portal 삭제
 ```
-$ cf delete sidecar-portal-api -n
-$ cf delete sidecar-portal-ui -n
-$ cf delete-space portal -n
-$ cf delete-org system -n
+$ chmod +x delete-portal.sh
+$ ./delete-portal.sh
 ```
 
 ### <div id='2.4.2'> ※ (참고) Sidecar Dependency 삭제 (Sidecar 삭제 후)
@@ -125,4 +122,4 @@ $ ./uninstall-cp-portal.sh
 ```
 
 
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar Portal0
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar Portal
