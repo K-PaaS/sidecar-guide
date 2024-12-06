@@ -133,15 +133,15 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
     <td rowspan="3">Services</td>
     <td>Domains</td>
     <td>Domains 정보 관리</td>
-    <td rowspan="3">All</td>
+    <td rowspan="3">Super Admin, Sidecar Admin, User(조회)</td>
   </tr>
   <tr>
     <td>Routes</td>
     <td>Routes 정보 관리</td>
   </tr>
   <tr>
-    <td>Routes</td>
-    <td>Routes 정보 관리</td>
+    <td>Services</td>
+    <td>Services 정보 관리</td>
   </tr>
   <tr>
     <td rowspan="2">Managementes 메뉴</td>
@@ -152,7 +152,7 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
   <tr>
     <td>Organizations</td>
     <td>Organizations, Space 정보 관리</td>
-    <td>Super Admin, Sidecar Admin, User(Role 별 상이)</td>
+    <td>Super Admin, Sidecar Admin, User <a href="#4-4-2-0">(Role별 상이)</a>
   </tr> 
   <tr>
     <td>Info</td>
@@ -477,6 +477,23 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 <br>
 
 ### <div id='4-4-2'/> 4.4.2. Organizations
+#### <div id='4-4-2-0'/> ※ Role Type 별 액세스 권한
+| 권한                 | Sidecar Admin | Org Manager | Org User
+|----------------------|---|---|----|
+| Org 생성             | Y |   |    |
+| Org 삭제             | Y |   |    |
+| Org 목록 조회        | Y | Y | Y* |
+| Org 유저 권한 부여   | Y |   |    |
+| Org 유저 권한 해제   | Y | Y |    |
+| Org 유저 목록 조회   | Y | Y | Y  |
+| Space 생성           | Y | Y |    |
+| Space 삭제           | Y |   |    |
+| Space 목록 조회      | Y | Y | Y* |
+| Space 유저 권한 부여 | Y |   |    |
+| Space 유저 권한 해제 | Y | Y |    |
+| Space 유저 목록 조회 | Y | Y | Y  |
+
+\* 자기가 속한 Org/Space만 조회 가능
 #### <div id='4-4-2-1'/> 4.4.2.1. Organization 목록
 - Managements의 Organizations을 클릭하여 Organization 목록 페이지로 이동한다.  
 
