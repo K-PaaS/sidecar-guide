@@ -548,7 +548,6 @@ Sidecar 플랫폼의 포털은 컨테이너 관리자 계정과 동일하다.
 ###### <div id='4-4-2-3-4-1'/> 4.4.2.3.4.1. Space User 추가
 - Space User 목록에서 추가 버튼을 클릭할 시 Space User 추가 팝업창이 뜬다.
 - Organization에 소속된 User만 Space User로 초대가 가능하다
-- Space User는 Space Developer와 Space Manager 선택이 가능하다.
 
 ![4-4-2-3-4-1]
 
