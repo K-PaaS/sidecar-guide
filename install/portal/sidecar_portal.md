@@ -115,31 +115,32 @@ sidecar-portal-ui    started           web:1/1, executable-jar:0/0, task:0/0   s
 ```
 
 ## <div id='2.4'> 2.4. Keycloak Redirect URL 설정  
-Sidecar Portal로 접근하기 위하여 Keycloak Redirect URL 설정을 진행해야 한다.
+- Sidecar Portal로 접근하기 위하여 Keycloak Redirect URL 설정을 진행해야 한다.
 ```
 # keycloak 주소 확인
 $ kubectl get ing -n keycloak
 NAME                  CLASS   HOSTS                            ADDRESS       PORTS   AGE
 cp-keycloak-ingress   nginx   keycloak.k-paas.kr               10.0.12.150   80      28d
 ```
-접속 후 Administration Console을 접근하여 로그인을 진행한다. 
-로그인과 관련된 정보는 다음 [링크](https://github.com/K-PaaS/container-platform/blob/master/install-guide/portal/cp-portal-standalone-guide.md#-key-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%8F%AC%ED%84%B8-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B3%84%EC%A0%95-%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C-%EC%84%A4%EC%A0%95-)를 확인한다.
+- 접속 후 Administration Console을 접근하여 로그인을 진행한다. 
+- 로그인과 관련된 정보는 다음 [링크](https://github.com/K-PaaS/container-platform/blob/master/install-guide/portal/cp-portal-standalone-guide.md#-key-%EC%BB%A8%ED%85%8C%EC%9D%B4%EB%84%88-%ED%94%8C%EB%9E%AB%ED%8F%BC-%ED%8F%AC%ED%84%B8-%EA%B4%80%EB%A6%AC%EC%9E%90-%EA%B3%84%EC%A0%95-%ED%8C%A8%EC%8A%A4%EC%9B%8C%EB%93%9C-%EC%84%A4%EC%A0%95-)를 확인한다.
 
 ![2-4-1]
 
-좌측 상단의 Master를 클릭하여 Cp-realm으로 변경을 진행한다.
+- 좌측 상단의 Master를 클릭하여 Cp-realm으로 변경을 진행한다.
 
 ![2-4-2]
 
-Clients - cp-client를 클릭한다.
+- Clients - cp-client를 클릭한다.
 
 ![2-4-3]
 
-Access settings - Valid redirect URIs에 sidecar-portal-ui의 주소를 다음과 같은 형식으로 추가한 뒤 저장한다. 예시) http://sidecar-portal-ui.apps.k-paas.kr/*
+- Access settings - Valid redirect URIs에 sidecar-portal-ui의 주소를 다음과 같은 형식으로 추가한 뒤 저장한다.  
+  예시) http://sidecar-portal-ui.apps.k-paas.kr/*
 
 ![2-4-4]
 
-이후 sidecar-portal-ui의 route인 http://sidecar-portal-ui.apps.k-paas.kr 로 접속을 시도한다.
+- 이후 sidecar-portal-ui의 route인 http://sidecar-portal-ui.apps.k-paas.kr 로 접속을 시도한다.
 
 
 ### <div id='2.4.1'> ※ (참고) Sidecar Portal 삭제
