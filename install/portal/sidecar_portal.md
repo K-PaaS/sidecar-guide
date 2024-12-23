@@ -61,7 +61,7 @@ $ vi deploy-cp-portal-infra.sh
 #VARIABLES
 +INGRESS_HOST_DOMAIN="{host domain}"    # Host Domain (e.g. xx.xxx.xxx.xx.nip.io)
 
-CP_PORTAL_VERSION=v1.5.2
+CP_PORTAL_VERSION=v1.6.0
 
 # SCRIPT START
 
@@ -135,7 +135,7 @@ cp-keycloak-ingress   nginx   keycloak.k-paas.kr               10.0.12.150   80 
 
 ![2-4-3]
 
-- Access settings - Valid redirect URIs에 sidecar-portal-ui의 주소를 다음과 같은 형식으로 추가한 뒤 저장한다.  
+- Access settings - Valid redirect URIs와 Web origins에 sidecar-portal-ui의 주소를 다음과 같은 형식으로 추가한 뒤 저장한다.  
   예시) http://sidecar-portal-ui.apps.k-paas.kr/*
 
 ![2-4-4]

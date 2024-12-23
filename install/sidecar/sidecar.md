@@ -33,7 +33,7 @@
 <br>
 
 ## <div id='1.2'> 1.2. 범위
-본 문서는 [korifi v0.12.0](https://github.com/cloudfoundry/korifi/tree/v0.12.0), [sidecar-deployment v2.0.0](https://github.com/K-PaaS/sidecar-deployment/tree/v2.0.0), [cp-deployment v1.5.2](https://github.com/k-paas/cp-deployment/tree/v1.5.2)을 기준으로 작성하였다.    
+본 문서는 [korifi v0.12.0](https://github.com/cloudfoundry/korifi/tree/v0.12.0), [sidecar-deployment v2.0.1](https://github.com/K-PaaS/sidecar-deployment/tree/v2.0.1), [cp-deployment v1.6.0](https://github.com/k-paas/cp-deployment/tree/v1.6.0)을 기준으로 작성하였다.    
 본 문서는 K-PaaS Container-Platform 단독 배포(Kubespray)를 활용하여 Kubernetes Cluster를 구성 후 Sidecar 설치 기준으로 작성하였다.  
 본 문서는 IaaS, Kubernetes에 대한 기본 이해도가 있다는 전제하에 가이드를 진행하였다.  
 
@@ -95,11 +95,11 @@ korifi github : [https://github.com/cloudfoundry/korifi](https://github.com/clou
 
 ## <div id='2.3'> 2.3. 실행파일 다운로드
 
-- git clone 명령을 통해 다음 경로에서 Sidecar 다운로드를 진행한다. 본 설치 가이드에서의 Sidecar의 버전은 v2.0.0 버전이다.
+- git clone 명령을 통해 다음 경로에서 Sidecar 다운로드를 진행한다. 본 설치 가이드에서의 Sidecar의 버전은 v2.0.1 버전이다.
 
 ```
 $ cd $HOME
-$ git clone https://github.com/K-PaaS/sidecar-deployment.git -b v2.0.0
+$ git clone https://github.com/K-PaaS/sidecar-deployment.git -b v2.0.1
 $ cd sidecar-deployment/install-scripts
 $ chmod +x ./install-test.sh
 $ chmod +x ./support-files/user/*.sh
