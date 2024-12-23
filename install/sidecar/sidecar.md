@@ -1,4 +1,4 @@
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar
 
 ## Table of Contents
 
@@ -33,7 +33,7 @@
 <br>
 
 ## <div id='1.2'> 1.2. 범위
-본 문서는 [korifi v0.12.0](https://github.com/cloudfoundry/korifi/tree/v0.12.0), [sidecar-deployment v2.0.0-beta2](https://github.com/K-PaaS/sidecar-deployment/tree/v2.0.0-beta2), [cp-deployment v1.5.1.1](https://github.com/k-paas/cp-deployment/tree/v1.5.1.1)을 기준으로 작성하였다.    
+본 문서는 [korifi v0.12.0](https://github.com/cloudfoundry/korifi/tree/v0.12.0), [sidecar-deployment v2.0.0](https://github.com/K-PaaS/sidecar-deployment/tree/v2.0.0), [cp-deployment v1.5.2](https://github.com/k-paas/cp-deployment/tree/v1.5.2)을 기준으로 작성하였다.    
 본 문서는 K-PaaS Container-Platform 단독 배포(Kubespray)를 활용하여 Kubernetes Cluster를 구성 후 Sidecar 설치 기준으로 작성하였다.  
 본 문서는 IaaS, Kubernetes에 대한 기본 이해도가 있다는 전제하에 가이드를 진행하였다.  
 
@@ -95,11 +95,11 @@ korifi github : [https://github.com/cloudfoundry/korifi](https://github.com/clou
 
 ## <div id='2.3'> 2.3. 실행파일 다운로드
 
-- git clone 명령을 통해 다음 경로에서 Sidecar 다운로드를 진행한다. 본 설치 가이드에서의 Sidecar의 버전은 v2.0.0-beta2 버전이다.
+- git clone 명령을 통해 다음 경로에서 Sidecar 다운로드를 진행한다. 본 설치 가이드에서의 Sidecar의 버전은 v2.0.0 버전이다.
 
 ```
 $ cd $HOME
-$ git clone https://github.com/K-PaaS/sidecar-deployment.git -b v2.0.0-beta2
+$ git clone https://github.com/K-PaaS/sidecar-deployment.git -b v2.0.0
 $ cd sidecar-deployment/install-scripts
 $ chmod +x ./install-test.sh
 $ chmod +x ./support-files/user/*.sh
@@ -300,7 +300,7 @@ replicaset.apps/korifi-controllers-controller-manager-76986974d6   1         1  
 
 ## <div id='2.8'> 2.8. Sidecar 로그인 및 테스트 앱 배포
 - 테스트 앱을 배포하여 앱이 정상 배포되는지 확인한다.
-- Sidecar v2.0.0-beta2 이상부터는 로그인하는 유저는 Kubernetes의 User로 로그인을 진행한다.
+- Sidecar v2.0.0-beta 이상부터는 로그인하는 유저는 Kubernetes의 User로 로그인을 진행한다.
 - 배포 자동 테스트
 
 ```
@@ -520,4 +520,4 @@ $ source deploy-inject-self-signed-cert.sh
 - [네임스페이스 생성 & 레지스트리 정보 입력](#2.5) 부터 가이드를 확인하여 설치를 진행한다.
 
 
-### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](./README.md) > Sidecar
+### [Index](https://github.com/K-PaaS/Guide/blob/master/README.md) > [K-PaaS Sidecar Install](../README.md) > Sidecar
