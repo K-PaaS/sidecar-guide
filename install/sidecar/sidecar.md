@@ -500,7 +500,7 @@ drwxr-xr-x 2 root   root   4096 Jan  4  2024 ./
 drwxr-xr-x 5 root   root   4096 Jan  4  2024 ../
 -rw-r--r-- 1 root   root   1127 Jan  4  2024 kpaas.kr.crt
 
-$ cat /usr/local/share/ca-certificates/kpaas.kr.crt ~/sidecar-deployment/install-scripts/support-files/private-repository.ca
+$ cat /usr/local/share/ca-certificates/kpaas.kr.crt > ~/sidecar-deployment/install-scripts/support-files/private-repository.ca
 
 # Cert Injection에 관한 variables.yml 설정
 $ cd ~/sidecar-deployment/install-scripts
