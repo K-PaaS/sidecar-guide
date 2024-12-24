@@ -494,13 +494,13 @@ $ curl -u $REPOSITORY_USERNAME:$REPOSITORY_PASSWORD -k $REPOSITORY_URL/api/v2.0/
 ```
 ### <div id='2.10.2'> Harbor CA 확인 및 Cert Injection
 ```
-$ ll /usr/local/share/ca-certificates/cp-harbor-ca.crt
+$ ll /usr/local/share/ca-certificates/*.crt
 total 12
 drwxr-xr-x 2 root   root   4096 Jan  4  2024 ./
 drwxr-xr-x 5 root   root   4096 Jan  4  2024 ../
--rw-rw-r-- 1 ubuntu ubuntu 1127 Jan  4  2024 cp-harbor-ca.crt
+-rw-r--r-- 1 root   root   1127 Jan  4  2024 kpaas.kr.crt
 
-$ cp /usr/local/share/ca-certificates/cp-harbor-ca.crt ~/sidecar-deployment/install-scripts/support-files/private-repository.ca
+$ cat /usr/local/share/ca-certificates/kpaas.kr.crt ~/sidecar-deployment/install-scripts/support-files/private-repository.ca
 
 # Cert Injection에 관한 variables.yml 설정
 $ cd ~/sidecar-deployment/install-scripts
